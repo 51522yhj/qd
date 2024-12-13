@@ -134,7 +134,7 @@ const handleSSESubmit = async () => {
   // 创建 SSE 请求
   const eventSource = new EventSource(
     // todo 手动填写完整的后端地址
-    "http://localhost:8101/api/question/ai_generate/sse" +
+    "https://yy-131728-9-1333102418.sh.run.tcloudbase.com/api/question/ai_generate/sse" +
       `?appId=${props.appId}&optionNumber=${form.optionNumber}&questionNumber=${form.questionNumber}`,
     {
       withCredentials: true, // 确保发送 cookies
