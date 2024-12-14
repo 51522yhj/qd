@@ -47,7 +47,7 @@
         </a-dropdown>
       </div>
       <div v-else>
-        <a-button type="primary" href="/user/login">登录</a-button>
+        <a-button type="primary" @click="handleLogoutClick()">登录</a-button>
       </div>
 
       <!-- <div>
@@ -73,7 +73,7 @@ const handleProfileClick = () => {
 
 const handleLogoutClick = () => {
   // 处理退出登录逻辑
-  console.log("退出登录");
+  // console.log("退出登录");
   router.push({
     path: "/user/login",
   });
